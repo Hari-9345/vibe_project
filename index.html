@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prism | Minimal Workspace</title>
+    <meta name="description" content="A minimalist productivity dashboard designed to help you focus and stay inspired with a beautiful glassmorphic UI.">
+    <!-- Meta for SEO -->
+    <meta name="theme-color" content="#1a1a1a">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="aurora-container" id="aurora"></div>
+
+    <main class="dashboard" id="prism-dashboard">
+        <!-- Sidebar Navigation (Optional or Quick Settings) -->
+        <aside class="section" id="inspiration-section">
+            <div class="wisdom-chip">Daily Wisdom</div>
+            <div class="quote-container" id="quote-box">
+                <p class="quote-text" id="quote-text">Everything you can imagine is real.</p>
+                <span class="quote-author" id="quote-author">— Pablo Picasso</span>
+            </div>
+        </aside>
+
+        <!-- Focus Center -->
+        <section class="section timer-container" id="focus-area">
+            <h2>Focus Center</h2>
+            <div class="timer-ring">
+                <svg class="timer-ring-svg">
+                    <circle class="timer-track" cx="120" cy="120" r="110"></circle>
+                    <circle class="timer-progress" id="timer-progress" cx="120" cy="120" r="110"></circle>
+                </svg>
+                <div class="timer-display" id="timer-display">25:00</div>
+            </div>
+            
+            <div class="timer-controls">
+                <button class="btn btn-primary" id="start-btn">Start</button>
+                <button class="btn" id="reset-btn">Reset</button>
+            </div>
+        </section>
+
+        <!-- Tasks Sidebar -->
+        <section class="section" id="tasks-area">
+            <h2>Zen Tasks</h2>
+            <div class="tasks-list" id="tasks-list">
+                <!-- Tasks will be injected here -->
+            </div>
+            <div class="task-input-container">
+                <input type="text" class="task-input" id="task-input" placeholder="What's next?">
+                <button class="btn" id="add-task-btn">+</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
